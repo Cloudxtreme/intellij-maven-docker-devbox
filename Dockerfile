@@ -34,7 +34,6 @@ ENV PATH ${HOME}/idea-IC-139.1117.1/bin:${PATH}
 RUN wget -O ${HOME}/maven.tar.gz http://www.webhostingjams.com/mirror/apache/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.tar.gz && \
     tar zxvf ${HOME}/maven.tar.gz && \
     rm ${HOME}/maven.tar.gz
-ADD settings.xml ${HOME}/.m2/settings.xml
 ENV M2_HOME ${HOME}/apache-maven-3.2.5
 ENV PATH ${M2_HOME}/bin:${PATH}
 
