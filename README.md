@@ -9,3 +9,5 @@ Usage
 	$ export DISPLAY=:0.0
 	$ docker build -t java-devbox .
 	$ docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --name java-proj-1 java-devbox
+
+This should drop you into a bash shell, from here I would usually start `tmux` and create a new window to run `idea`.
