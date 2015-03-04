@@ -49,9 +49,6 @@ RUN wget -O ${HOME}/maven.tar.gz http://www.webhostingjams.com/mirror/apache/mav
 ENV M2_HOME ${HOME}/apache-maven-3.2.5
 ENV PATH ${M2_HOME}/bin:${PATH}
 
-# SBS Development Certificates
-ADD cacerts.jks ${HOME}/certs/cacerts.jks
-
 # Docker
 RUN wget https://get.docker.io/builds/Linux/x86_64/docker-latest -O /usr/local/bin/docker && \
     chmod +x /usr/local/bin/docker
